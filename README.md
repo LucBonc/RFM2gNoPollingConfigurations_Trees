@@ -11,9 +11,9 @@ The StateMachines for master and slaves are the same and showed in figure <br>
 <br>
 The master and slaves MARTe2 RtApp(s) objects are summarized in the following two figures<br>
 <br>
-<img src="Docs/three_hosts/master/master_RTApp.png" width="70%" height="70%">
+<img src="Docs/three_hosts/master/master_RTApp.png" width="45%" height="45%">
 
-<img src="Docs/three_hosts/slaves/slave253_RTApp.png" width="70%" height="70%">
+<img src="Docs/three_hosts/slaves/slave253_RTApp.png" width="45%" height="45%">
 
 <br>
 The master station in the state Run acts as follow:
