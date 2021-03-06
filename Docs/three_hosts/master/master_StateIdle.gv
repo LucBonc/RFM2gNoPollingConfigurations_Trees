@@ -1,0 +1,22 @@
+digraph G {
+rankdir=LR
+concentrate=true
+"Idle.Thread1.GAMTimerL" [shape=record, style=filled, fillcolor=white, color=blue,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">GAMTimerL <BR/>(IOGAM)</font></TD></TR></TABLE>>]
+subgraph cluster_Idle {
+label = "State: Idle"
+subgraph cluster_Idle_Thread1 {
+label = "Thread: Thread1"
+color= "red"
+"Idle.Thread1.GAMTimerL"
+}
+}
+"+DDB1" [shape=record, style=filled, fillcolor=white, color=darkgreen,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">+DDB1 <BR/>(GAMDataSource)</font></TD></TR></TABLE>>]
+"+LoggerDataSource" [shape=record, style=filled, fillcolor=white, color=darkgreen,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">+LoggerDataSource <BR/>(LoggerDataSource)</font></TD></TR></TABLE>>]
+"+Timings" [shape=record, style=filled, fillcolor=white, color=darkgreen,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">+Timings <BR/>(TimingDataSource)</font></TD></TR></TABLE>>]
+"+AD20xx_0" [shape=record, style=filled, fillcolor=white, color=darkgreen,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">+AD20xx_0 <BR/>(AD20xxADC)</font></TD></TR></TABLE>>]
+"+RFM" [shape=record, style=filled, fillcolor=white, color=darkgreen,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">+RFM <BR/>(RFM2g)</font></TD></TR></TABLE>>]
+"+MDSWriter" [shape=record, style=filled, fillcolor=white, color=darkgreen,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">+MDSWriter <BR/>(MDSWriter)</font></TD></TR></TABLE>>]
+"+Timer" [shape=record, style=filled, fillcolor=white, color=darkgreen,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">+Timer <BR/>(LinuxTimer::TerminatorLinuxTimer)</font></TD></TR></TABLE>>]
+"+Timer"->"Idle.Thread1.GAMTimerL"
+"Idle.Thread1.GAMTimerL"->"+DDB1"
+}
