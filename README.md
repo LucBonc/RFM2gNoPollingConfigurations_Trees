@@ -26,4 +26,4 @@ The Slaves corresponding states acts as follow
 
 The change form Idle to Run State, issued by TcpProxy Message,  requires that all the hosts involved 
 in the configurations  are up and running the Idle State.
-More information about the RFM Datasource can be found [here](https://git.frascati.enea.it/davide.liuzza/rfm2gnopolling)
+More information about the RFM Datasource can be found [here](https://github.com/LucBonc/RFM2gNoPolling)
