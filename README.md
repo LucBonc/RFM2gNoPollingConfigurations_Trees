@@ -11,18 +11,19 @@ The StateMachines for master and slaves are the same and showed in figure <br>
 <br>
 The master and slaves MARTe2 RtApp(s) objects are summarized in the following two figures<br>
 <br>
+<center>
 <img src="Docs/three_hosts/master/master_RTApp.png" width="45%" height="45%">
 
 <img src="Docs/three_hosts/slaves/slave253_RTApp.png" width="45%" height="45%">
-
+</center>
 <br>
 The master station in the state Run acts as follow:
 <br>
-<img src="Docs/three_hosts/master/master_StateRun.png" width="70%" height="70%"><br>
+<center><img src="Docs/three_hosts/master/master_StateRun.png" width="70%" height="70%"><br><center>
 <br>
 The Slaves corresponding states acts as follow 
 <br>
-<img src="Docs/three_hosts/slaves/slave253_StateRun.png"  width="70%" height="70%">
+<center><img src="Docs/three_hosts/slaves/slave253_StateRun.png"  width="70%" height="70%"></center>
 
 The change form Idle to Run State, issued by TcpProxy Message,  requires that all the hosts involved 
 in the configurations  are up and running the Idle State.
