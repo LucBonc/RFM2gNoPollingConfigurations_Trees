@@ -7,7 +7,7 @@ The three_host folder contains Configurations and trees  for the Scenario A:<br>
 <br>
 The StateMachines for master and slaves are the same and showed in figure <br>
 <br>
-<img src="Docs/three_hosts/master/master_StateMachine.png" width="500" height="400">
+<img src="Docs/three_hosts/master/master_StateMachine.png" width="40%" height="40%">
 <br>
 The master and slaves MARTe2 RtApp(s) objects are summarized in the following two figures<br>
 <br>
@@ -18,11 +18,11 @@ The master and slaves MARTe2 RtApp(s) objects are summarized in the following tw
 <br>
 The master station in the state Run acts as follow:
 <br>
-<img src="Docs/three_hosts/master/master_StateRun.png" width="800" height="400"><br>
+<img src="Docs/three_hosts/master/master_StateRun.png" width="40%" height="40%"><br>
 <br>
 The Slaves corresponding states acts as follow 
 <br>
-<img src="Docs/three_hosts/slaves/slave253_StateRun.png"  width="600" height="400">
+<img src="Docs/three_hosts/slaves/slave253_StateRun.png"  width="40%" height="40%">
 
 The change form Idle to Run State, issued by TcpProxy Message,  requires that all the hosts involved 
 in the configurations  are up and running the Idle State.
