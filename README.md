@@ -2,7 +2,7 @@
 
 The three_host folder contains Configurations and trees  for the Scenario A:<br>
 <p>
-"<b>ONE master synchronized by adlink 2020 adc and TWO slaves synchronized by Rfm<b>"
+"<b>ONE master synchronized by adlink 2020 adc and TWO slaves synchronized by Rfm</b>"
 </p>
 <br>
 The StateMachines for master and slaves are the same and showed in figure <br>
@@ -30,9 +30,10 @@ in the configurations  are up and running the Idle State.
 More information about the RFM Datasource can be found [here](https://github.com/LucBonc/RFM2gNoPolling)
 
 
-
-
 The four_host folder contains Configurations and trees  for the Scenario B:<br>
+<p>
+"<b>ONE master synchronized by adlink 2020 adc and 3 slaves synchronized by Rfm, 2 of/3 slaves are on the same host</b>"
+</p>
 
 The four hosts example is constructed in this way:
 
