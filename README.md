@@ -41,7 +41,7 @@ The four hosts example is constructed in this way:
 
 -Host 1 and host 2 read the first three hosts (NodeIdNumber: 0, 1, 2, 3)
 
--Gost 3 reads all the four hosts (NodeIdNumber: 0, 1, 2, 3)
+-Host 3 reads all the four hosts (NodeIdNumber: 0, 1, 2, 3)
 
 The configurations file are as follows:
 
