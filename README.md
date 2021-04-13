@@ -59,7 +59,7 @@ and the other slave with two threads is configured as follow:
 
 
 
-# The <b>asyn_host folder</b> contains Configurations and trees  for the Scenario C:<br>
+# The <b>asynch_host folder</b> contains Configurations and trees  for the Scenario C:<br>
 <p>
 "<b>ONE master synchronized by adlink 2010 adc and 2 slaves, 1 slave synchronized by Rfm, 1 async RFM slave synchronized by adlink 2022  </b>"
 </p>
