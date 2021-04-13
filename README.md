@@ -62,4 +62,4 @@ Despite three host example the 2 two_threads state run is reported in the follow
 "<b>ONE master synchronized by adlink 2010 adc and 1 slaves synchronized by Rfm, 1 async RFM slave synchronized by adlink 2022  </b>"
 </p>
 
-<center><img src="Docs/four_hosts/slave/slave47asynchStateRun.png"  width="70%" height="70%"></center>
+<center><img src="Docs/three_hosts_asynch/slave/slave47asynchStateRun.png"  width="70%" height="70%"></center>
