@@ -55,3 +55,10 @@ Despite three host example the 2 two_threads state run is reported in the follow
 
 <center><img src="Docs/four_hosts/slave/slave47StateRun.png"  width="70%" height="70%"></center>
 
+
+
+# The <b>asyn_host folder</b> contains Configurations and trees  for the Scenario C:<br>
+<p>
+"<b>ONE master synchronized by adlink 2010 adc and 1 slaves synchronized by Rfm, 1 async RFM slave synchronized by adlink 2022  </b>"
+</p>
+
