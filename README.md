@@ -1,8 +1,8 @@
 # RFM2gNoPollingConfigurations_Trees
 
-The <b>three_host folder</b> contains Configurations and trees  for the Scenario A:<br>
+# The <b>three_host folder</b> contains Configurations and trees  for the Scenario A:<br>
 <p>
-"<b>ONE master synchronized by adlink 2020 adc and TWO slaves synchronized by Rfm</b>"
+"<b>ONE master synchronized by adlink 2010 adc and TWO slaves synchronized by Rfm</b>"
 </p>
 <br>
 The StateMachines for master and slaves are the same and showed in figure <br>
@@ -30,9 +30,9 @@ in the configurations  are up and running the Idle State.
 More information about the RFM Datasource can be found [here](https://github.com/LucBonc/RFM2gNoPolling)
 
 
-The <b>four_host folder</b> contains Configurations and trees  for the Scenario B:<br>
+# The <b>four_host folder</b> contains Configurations and trees  for the Scenario B:<br>
 <p>
-"<b>ONE master synchronized by adlink 2020 adc and 3 slaves synchronized by Rfm, 2 of/3 slaves are on the same host</b>"
+"<b>ONE master synchronized by adlink 2010 adc and 3 slaves synchronized by Rfm, 2 of/3 slaves are on the same host</b>"
 </p>
 
 The four hosts example is constructed in this way:
@@ -50,5 +50,8 @@ The configurations file are as follows:
 -Host 2: slave253_two_threads47-Host.cfg
 
 -Host 1 and host 4: slave47_two_threads47.cfg (on the same configuration file as two separate threads)
+
+Despite three host example the 2 two_threads state run is reported in the follow 
+
 <center><img src="Docs/four_hosts/slave/slave47StateRun.png"  width="70%" height="70%"></center>
 
