@@ -51,7 +51,9 @@ The configurations file are as follows:
 
 -Host 1 and host 4: slave47_two_threads47.cfg (on the same configuration file as two separate threads)
 
-Despite three host example the 2 two_threads state run is reported in the follow 
+
+The master and  1 synch RFM slave are configured like in scenario A
+and the other slave with two threads is configured as follow:
 
 <center><img src="Docs/four_hosts/slave/slave47StateRun.png"  width="70%" height="70%"></center>
 
@@ -61,5 +63,8 @@ Despite three host example the 2 two_threads state run is reported in the follow
 <p>
 "<b>ONE master synchronized by adlink 2010 adc and 2 slaves, 1 slave synchronized by Rfm, 1 async RFM slave synchronized by adlink 2022  </b>"
 </p>
+
+the master and synch RFM slave are configured like in scenario A
+the asynch slave is configured as follow:
 
 <center><img src="Docs/three_hosts_asynch/slave/slave47asynchStateRun.png"  width="70%" height="70%"></center>
