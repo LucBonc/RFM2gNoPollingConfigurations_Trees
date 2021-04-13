@@ -1,0 +1,47 @@
+digraph G {
+bgcolor=white
+subgraph cluster_StatMacchine {
+label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">StatMacchine <BR/>(StateMachine)</font></TD></TR></TABLE>>
+subgraph cluster_StatMacchineINITIAL {
+label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">INITIAL <BR/>(ReferenceContainer)</font></TD></TR></TABLE>>
+subgraph cluster_StatMacchineINITIALSARRT {
+label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">SARRT <BR/>(StateMachineEvent)</font></TD></TR></TABLE>>
+subgraph cluster_StatMacchineINITIALSARRTChaneToStateIdlleMsg {
+label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">ChaneToStateIdlleMsg <BR/>(Message)</font></TD></TR></TABLE>>
+StatMacchineINITIALSARRTChaneToStateIdlleMsgPaameteers [shape=record, style=filled, fillcolor=white, color=black,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">Paameteers <BR/>(ConfigurationDatabase)</font></TD></TR></TABLE>>]
+}
+StatMacchineINITIALSARRTStartNextSateExxecutionMsg [shape=record, style=filled, fillcolor=white, color=black,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">StartNextSateExxecutionMsg <BR/>(Message)</font></TD></TR></TABLE>>]
+}
+}
+subgraph cluster_StatMacchineDLEE {
+label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">DLEE <BR/>(ReferenceContainer)</font></TD></TR></TABLE>>
+subgraph cluster_StatMacchineDLEEGOTORUN {
+label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">GOTORUN <BR/>(StateMachineEvent)</font></TD></TR></TABLE>>
+subgraph cluster_StatMacchineDLEEGOTORUNOpeTreeeMsg {
+label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">OpeTreeeMsg <BR/>(Message)</font></TD></TR></TABLE>>
+StatMacchineDLEEGOTORUNOpeTreeeMsgPaameteers [shape=record, style=filled, fillcolor=white, color=black,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">Paameteers <BR/>(ConfigurationDatabase)</font></TD></TR></TABLE>>]
+}
+StatMacchineDLEEGOTORUNSettingDignostiicProtocol [shape=record, style=filled, fillcolor=white, color=black,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">SettingDignostiicProtocol <BR/>(Message)</font></TD></TR></TABLE>>]
+subgraph cluster_StatMacchineDLEEGOTORUNChangeooRunMsg {
+label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">ChangeooRunMsg <BR/>(Message)</font></TD></TR></TABLE>>
+StatMacchineDLEEGOTORUNChangeooRunMsgPaameteers [shape=record, style=filled, fillcolor=white, color=black,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">Paameteers <BR/>(ConfigurationDatabase)</font></TD></TR></TABLE>>]
+}
+StatMacchineDLEEGOTORUNStopCurrentSateeExecutionMsg [shape=record, style=filled, fillcolor=white, color=black,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">StopCurrentSateeExecutionMsg <BR/>(Message)</font></TD></TR></TABLE>>]
+StatMacchineDLEEGOTORUNStartNextSateExxecutionMsg [shape=record, style=filled, fillcolor=white, color=black,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">StartNextSateExxecutionMsg <BR/>(Message)</font></TD></TR></TABLE>>]
+}
+}
+subgraph cluster_StatMacchineRUN {
+label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">RUN <BR/>(ReferenceContainer)</font></TD></TR></TABLE>>
+subgraph cluster_StatMacchineRUNOTOIDLEE {
+label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">OTOIDLEE <BR/>(StateMachineEvent)</font></TD></TR></TABLE>>
+StatMacchineRUNOTOIDLEEMessgeFFlush [shape=record, style=filled, fillcolor=white, color=black,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">MessgeFFlush <BR/>(Message)</font></TD></TR></TABLE>>]
+subgraph cluster_StatMacchineRUNOTOIDLEEChangeToIdleMsg {
+label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">ChangeToIdleMsg <BR/>(Message)</font></TD></TR></TABLE>>
+StatMacchineRUNOTOIDLEEChangeToIdleMsgPaameteers [shape=record, style=filled, fillcolor=white, color=black,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">Paameteers <BR/>(ConfigurationDatabase)</font></TD></TR></TABLE>>]
+}
+StatMacchineRUNOTOIDLEEStopCurrentSateeExecutionMsg [shape=record, style=filled, fillcolor=white, color=black,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">StopCurrentSateeExecutionMsg <BR/>(Message)</font></TD></TR></TABLE>>]
+StatMacchineRUNOTOIDLEEStartNextSateExxecutionMsg [shape=record, style=filled, fillcolor=white, color=black,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">StartNextSateExxecutionMsg <BR/>(Message)</font></TD></TR></TABLE>>]
+}
+}
+}
+}
