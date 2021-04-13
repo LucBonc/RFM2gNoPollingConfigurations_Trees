@@ -49,7 +49,6 @@ The configurations file are as follows:
 
 -Host 2: slave253_two_threads47-Host.cfg
 
-<center><img src="Docs/four_hosts/slave/slave253RTApp.png"  width="70%" height="70%"></center>
-
-
 -Host 1 and host 4: slave47_two_threads47.cfg (on the same configuration file as two separate threads)
+<center><img src="Docs/four_hosts/slave/slave47RTApp.png"  width="70%" height="70%"></center>
+

@@ -1,0 +1,46 @@
+digraph G {
+rankdir=LR
+concentrate=true
+"Idle.Thread1.GAMTimerL" [shape=record, style=filled, fillcolor=white, color=blue,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">GAMTimerL <BR/>(IOGAM)</font></TD></TR></TABLE>>]
+"Run.Thread1.RFMInput" [shape=record, style=filled, fillcolor=white, color=blue,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">RFMInput <BR/>(IOGAM)</font></TD></TR></TABLE>>]
+"Run.Thread1.RFMOutput" [shape=record, style=filled, fillcolor=white, color=blue,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">RFMOutput <BR/>(IOGAM)</font></TD></TR></TABLE>>]
+"Run.Thread1.OneSample" [shape=record, style=filled, fillcolor=white, color=blue,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">OneSample <BR/>(IOGAM)</font></TD></TR></TABLE>>]
+"Run.Thread1.GAMDisplay" [shape=record, style=filled, fillcolor=white, color=blue,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">GAMDisplay <BR/>(IOGAM)</font></TD></TR></TABLE>>]
+"Run.Thread2.RFMInput2" [shape=record, style=filled, fillcolor=white, color=blue,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">RFMInput2 <BR/>(IOGAM)</font></TD></TR></TABLE>>]
+"Run.Thread2.RFMOutput2" [shape=record, style=filled, fillcolor=white, color=blue,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">RFMOutput2 <BR/>(IOGAM)</font></TD></TR></TABLE>>]
+"Run.Thread2.OneSample2" [shape=record, style=filled, fillcolor=white, color=blue,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">OneSample2 <BR/>(IOGAM)</font></TD></TR></TABLE>>]
+"Run.Thread2.GAMDisplay2" [shape=record, style=filled, fillcolor=white, color=blue,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">GAMDisplay2 <BR/>(IOGAM)</font></TD></TR></TABLE>>]
+subgraph cluster_Idle {
+label = "State: Idle"
+subgraph cluster_Idle_Thread1 {
+label = "Thread: Thread1"
+color= "red"
+"Idle.Thread1.GAMTimerL"
+}
+}
+subgraph cluster_Run {
+label = "State: Run"
+subgraph cluster_Run_Thread1 {
+label = "Thread: Thread1"
+color= "red"
+"Run.Thread1.RFMInput"->"Run.Thread1.RFMOutput"->"Run.Thread1.OneSample"->"Run.Thread1.GAMDisplay"
+}
+subgraph cluster_Run_Thread2 {
+label = "Thread: Thread2"
+color= "red"
+"Run.Thread2.RFMInput2"->"Run.Thread2.RFMOutput2"->"Run.Thread2.OneSample2"->"Run.Thread2.GAMDisplay2"
+}
+}
+subgraph cluster_DataSources {
+label = "Data Sources"
+"+DDB1" [shape=record, style=filled, fillcolor=white, color=darkgreen,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">+DDB1 <BR/>(GAMDataSource)</font></TD></TR></TABLE>>]
+"+DDB2" [shape=record, style=filled, fillcolor=white, color=darkgreen,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">+DDB2 <BR/>(GAMDataSource)</font></TD></TR></TABLE>>]
+"+LoggerDataSource" [shape=record, style=filled, fillcolor=white, color=darkgreen,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">+LoggerDataSource <BR/>(LoggerDataSource)</font></TD></TR></TABLE>>]
+"+Timings" [shape=record, style=filled, fillcolor=white, color=darkgreen,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">+Timings <BR/>(TimingDataSource)</font></TD></TR></TABLE>>]
+"+RFM" [shape=record, style=filled, fillcolor=white, color=darkgreen,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">+RFM <BR/>(RFM2g)</font></TD></TR></TABLE>>]
+"+RFM2" [shape=record, style=filled, fillcolor=white, color=darkgreen,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">+RFM2 <BR/>(RFM2g)</font></TD></TR></TABLE>>]
+"+MDSWriter" [shape=record, style=filled, fillcolor=white, color=darkgreen,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">+MDSWriter <BR/>(MDSWriter)</font></TD></TR></TABLE>>]
+"+MDSWriter2" [shape=record, style=filled, fillcolor=white, color=darkgreen,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">+MDSWriter2 <BR/>(MDSWriter)</font></TD></TR></TABLE>>]
+"+Timer" [shape=record, style=filled, fillcolor=white, color=darkgreen,label=<<TABLE border="0" cellborder="0"><TR><TD width="60" height="60"><font point-size="12">+Timer <BR/>(LinuxTimer::TerminatorLinuxTimer)</font></TD></TR></TABLE>>]
+}
+}
